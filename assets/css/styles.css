@@ -1,0 +1,102 @@
+:root{
+    --morningglory: #4287f5;
+    --white: #fff;
+    --sun:rgb(248, 245, 85);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--white);
+}
+
+header{
+    padding: 20px;
+    height: 50px;
+    background-color: var(--morningglory);
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav{
+    position: relative;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+
+   
+}
+
+header nav ul{
+    list-style-type: none;
+
+     /*Create a flexbox for the nav items */
+     display: flex;
+     flex-flow: row wrap;
+     align-items: center;
+     justify-content: center;
+    
+}
+
+header nav ul li{
+    margin-right: 25px;
+
+}
+
+header nav ul li:not(:last-child)::after{
+    color: var(--white);
+    position: relative;
+    left: 13px;
+    content: '|'
+    
+}
+
+header nav ul li:hover{
+    border-radius: 8px;
+    padding: 3px;
+    transition: all 0.5s ease-in-out;
+    
+    box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--sun);
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+h1{
+    display: inline-block;
+    color: var(--white);
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    position: relative;
+    bottom: 8px;
+}
+
+#hero{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/eveningsun.jpg");
+    background-size: cover;
+    background-position: center;
+    /*Create a flexbox for the subheading*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hero-subheading{
+    align-self: flex-end;
+    padding: 10px 50px 10px 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: var(--morningglory);
+    color: var(--white);
+}
+
+
