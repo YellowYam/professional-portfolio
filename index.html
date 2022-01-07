@@ -13,10 +13,10 @@
 </head>
 <body>
     <!-- Build the header for the logo and navbar-->
-    <header>  
+    <header class="flexbox">  
         <h1>Cody Scoles</h1>
         <nav>
-            <ul>
+            <ul class= "flexbox">
                 <li> <a href = '#'>About Me </a></li>
                 <li> <a href = '#'> Work  </a>   </li>
                 <li> <a href = '#'> Contact  </a> </li>
@@ -34,11 +34,14 @@
 
     </div>
 
+<!-- Put main and aside into a flexbox-->
+<div class = "flexbox">
+
 <!-- Start main content-->
     <main>
 
         <!--A biographical description-->
-        <section id = "about-me">
+        <section id = "about-me" class="main-content">
             <p>
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -50,7 +53,7 @@
         </section>
 
         <!--Flexbox project listings-->
-        <section id = "work">
+        <section id = "work" class="main-content">
 
             <div id= "flexbox">
                 <figure class="project">
@@ -69,7 +72,7 @@
         </section>
 
         <!--Contact information-->
-        <section id = "contact">
+        <section id = "contact" class="main-content">
           770-630-2578   cody.scoles@gmail.com    <a href="#">GitHub</a> <a href="#">LinkedIn</a>
         </section>
 
@@ -78,17 +81,17 @@
 <!-- Aside layout to label main content sections-->
     <aside>
         <article id = "about-me-label" class = "section-label">
-
+                <h2>About Me</h2>
         </article>
 
         <article id = "work-label" class = "section-label">
-            
+                <h2>Work</h2>
         </article>
 
         <article id = "contact-label" class= "section-label">
-            
+                <h2>Contact</h2>
         </article>
     </aside>
-
+</div>
 </body>
 </html>
