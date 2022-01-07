@@ -104,9 +104,10 @@ div.flexbox{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
+
 
 aside{
     
@@ -129,16 +130,23 @@ article.section-label{
     color: var(--white);
 }
 
+
+
 h2{
     margin-top: inherit;
     font-size: 25px;
 }
 
+/*End of page */
+article#contact-label {
+    flex: 0 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
 main{
     flex-basis: 70%;
-    height: 800px;
-    border: 2px solid var(--morningglory);
-
+  
     /*Display a flexbox for the main content */
     display: flex;
     flex-direction: column;
@@ -146,12 +154,16 @@ main{
 }
 
 section.main-content{
-    margin: 20px;
-    flex-basis: 400px;
-    max-width: 50%;
-    border: 2px solid var(--morningglory);
+    margin: 15px 20px 150px 10px;
+    padding: 20px 20px 20px 20px;
+    flex-basis: 100px;
+    background-color: var(--morningglory);
+    color: var(--white);
 }
 
-
-
+/*End of page */
+section#contact {
+    flex: 0 0 auto;
+    margin-bottom: 0px;
+}
 
