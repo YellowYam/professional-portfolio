@@ -1,97 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cody Scoles | Professional Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Build the header for the logo and navbar-->
-    <header class="flexbox">  
-        <h1>Cody Scoles</h1>
-        <nav>
-            <ul class= "flexbox">
-                <li> <a href = '#'>About Me </a></li>
-                <li> <a href = '#'> Work  </a>   </li>
-                <li> <a href = '#'> Contact  </a> </li>
-                <li> <a href = '#'> Resume </a>  </li>
-            </ul>
-        </nav>
+    <header class="flexbox">
+      <h1>Cody Scoles</h1>
+      <nav>
+        <ul class="flexbox">
+          <li><a href="#about-me">About Me </a></li>
+          <li><a href="#work"> Work </a></li>
+          <li><a href="#contact"> Contact </a></li>
+          <li><a href="#"> Resume </a></li>
+        </ul>
+      </nav>
     </header>
 
-     <!--Add hero image and subheading-->
-     <div id = "hero">
-
-        <div id = "hero-subheading">
-            <p>Full Stack Web Developer</p>
-        </div>
-
+    <!--Add hero image and subheading-->
+    <div id="hero">
+      <div id="hero-subheading">
+        <p>Full Stack Web Developer</p>
+      </div>
     </div>
 
-<!-- Put main and aside into a flexbox-->
-<div class = "flexbox">
+    <!-- Put main and aside into a flexbox-->
+    <main class="flexbox">
+      <!-- Display flexbox rows containing label and content -->
 
-<!-- Start main content-->
-    <main>
+      <!-- A biographical description -->
+      <div class="flexbox row">
+        <aside id="about-me-label" class="section-label">
+          <h2>About Me</h2>
+        </aside>
 
-        <!--A biographical description-->
-        <section id = "about-me" class="main-content">
-            <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-                 sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                 laborum.
-            </p>
+        <section id="about-me" class="main-content">
+          <p id="about-me">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </section>
+      </div>
 
+      <div class="flexbox row">
         <!--Flexbox project listings-->
-        <section id = "work" class="main-content">
 
-            <div id= "flexbox">
-                <figure class="project">
+        <aside id="work-label" class="section-label">
+          <h2>Work</h2>
+        </aside>
 
-                </figure>
+        <section id="work" class="main-content">
 
-                <figure class="project">
+         
+            <a href="#" class="project"> 
+              
+              <h2 class = "project-label">Main Project
+                <br/>
+                <span>Project Skills</span>
+              </h2>      
+            </a>
+          
+            <a href="#" class="project">
+              
+              <h2 class = "project-label">Project
+                <br/>
+                <span>Project Skills</span>
+              </h2>
+            
+          </a>
 
-                </figure>
-                
-                <figure class="project">
-
-                </figure>
-            </div>
-
+            <a href ='#' class="project">
+              
+              <h2 class = "project-label">Project
+                <br/>
+                <span>Project Skills</span>
+              </h2>
+              
+          
+          </a>
         </section>
+      </div>
+
+      <div class="flexbox row">
+        <aside id="contact-label" class="section-label">
+          <h2>Contact</h2>
+        </aside>
 
         <!--Contact information-->
-        <section id = "contact" class="main-content">
-         <pre> 770-630-2578        cody.scoles@gmail.com         <a href="#">GitHub</a>      <a href="#">LinkedIn</a></pre>
+        <section id="contact" class="main-content">
+          <div class = "contact-item">770-630-2578</div> 
+          <div class = "contact-item">cody.scoles@gmail.com</div> 
+          <div class = "contact-item"><a href="https://github.com/YellowYam">GitHub</a></div>
+          <div class = "contact-item"><a href="https://www.linkedin.com/in/cody-s-82a198128">LinkedIn</a></div>
         </section>
-
+      </div>
     </main>
-
-<!-- Aside layout to label main content sections-->
-    <aside>
-        <article id = "about-me-label" class = "section-label">
-                <h2>About Me</h2>
-        </article>
-
-        <article id = "work-label" class = "section-label">
-                <h2>Work</h2>
-        </article>
-
-        <article id = "contact-label" class= "section-label">
-                <h2>Contact</h2>
-        </article>
-    </aside>
-</div>
-</body>
+  </body>
 </html>

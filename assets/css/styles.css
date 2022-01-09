@@ -20,6 +20,7 @@ header{
     background-color: var(--morningglory);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header nav{
@@ -43,17 +44,11 @@ header nav ul{
 }
 
 header nav ul li{
-    margin-right: 25px;
+    width: 100px;
+    text-align: center;
 
 }
 
-header nav ul li:not(:last-child)::after{
-    color: var(--white);
-    position: relative;
-    left: 13px;
-    content: '|'
-    
-}
 
 header nav ul li:hover{
     border-radius: 8px;
@@ -69,12 +64,10 @@ a{
 }
 
 h1{
-    display: inline-block;
     color: var(--white);
     font-family: 'Lobster', cursive;
     font-size: 30px;
-    position: relative;
-    bottom: 8px;
+     margin-right: 25px;
 }
 
 #hero{
@@ -100,70 +93,150 @@ h1{
     color: var(--white);
 }
 
-div.flexbox{
+main.flexbox{
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
+/*Separate sections into rows*/
+div.flexbox.row{
 
-aside{
-    
-    flex-basis: 20%;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 100%;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+/*Style for content label*/
+aside.section-label{
+    flex: 0 0 15%;
     border-right: 3px solid var(--morningglory);
-
-    /*Display a flexbox for the aside labels*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
 }
-
-article.section-label{
-    margin: 15px 20px 150px 10px;
-    padding: 20px 20px 0px 20px;
-    flex-basis: 100px;
-    max-width: 75%;
-    background-color: var(--morningglory);
-    color: var(--white);
-}
-
 
 
 h2{
-    margin-top: inherit;
-    font-size: 25px;
+    height: fit-content;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--morningglory);
+    color: var(--white);
+    margin: 10px;
+    flex: 0 1 50%;
 }
 
-/*End of page */
-article#contact-label {
-    flex: 0 0 auto;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-}
-
-main{
-    flex-basis: 70%;
-  
-    /*Display a flexbox for the main content */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Style for content sections*/
 section.main-content{
-    margin: 15px 20px 150px 10px;
-    padding: 20px 20px 20px 20px;
-    flex-basis: 100px;
+    flex: 0 0 85%;
+}
+
+/*Style for About Me paragraph */
+
+p#about-me{
+    margin: 20px;
+    background-color: var(--morningglory);
+    color: var(--white);
+    padding: 10px;
+}
+
+/*Style for work box */
+section#work.main-content{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+
+ a.project{
+    flex: 0 1 45%;
+    min-width: 200px;
+    min-height: 150px;
+    border: 3px solid var(--morningglory);
+    margin: 20px;
+
+    /*project image*/
+    background-image: linear-gradient(
+          var(--white) 0%,
+          var(--morningglory) 100%);
+    background-size: 100% 100%;
+    background-position: center;
+
+  
+   /*Display flex to position the label*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+a.project:hover{
+   
+    transition: all 0.5s ease-in-out;
+    
+    box-shadow: inset 0px 0px 8px var(--sun), 0 0 15px var(--sun);
+
+}
+h2.project-label{
+    text-align: left;
+    width: fit-content;
+}
+
+span{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+a.project:first-child {
+    flex: 0 1 50%;
+    min-width: 200px;
+    min-height: 250px;
+    margin: 20px;
+
+    /* project image */
+    background-image: linear-gradient(
+          var(--white) 0%,
+          var(--morningglory) 100%);
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+section#contact.main-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+div.contact-item{
+    margin: 20px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 8px;
     background-color: var(--morningglory);
     color: var(--white);
 }
 
-/*End of page */
-section#contact {
-    flex: 0 0 auto;
-    margin-bottom: 0px;
+div.contact-item:hover{
+    transition: all 0.5s ease-in-out;
+    
+    box-shadow: inset 0px 0px 8px var(--sun), 0 0 15px var(--sun);
 }
 
+/*Media Queries to patch up the header height*/
+@media screen and (max-width: 650px){
+    header{
+        height: 90px;
+    }
+        
+}
+
+@media screen and (max-width: 356px){
+    header{
+        height: 110px;
+    }
+}
