@@ -76,7 +76,17 @@ h1 {
 
   /*Create a flexbox for the subheading*/
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+img{
+  margin: 5px;
+  margin-left: 15px;
+  border: 1px solid white;
+ 
+  
 }
 
 #hero-subheading {
@@ -86,6 +96,7 @@ h1 {
   margin-bottom: 10px;
   background-color: var(--morningglory);
   color: var(--white);
+  text-align: center;
 }
 
 main.flexbox {
@@ -228,6 +239,7 @@ a.contact-item:hover {
   p#about-me {
     width: 250px;
   }
+}
 
   @media screen and (max-width: 376px) {
     header {
@@ -243,5 +255,10 @@ a.contact-item:hover {
     p#about-me {
       width: 190px;
     }
+
+    div#hero-subheading {
+      width: 150px;
+      padding: 5px;
+    }
   }
-}
+
