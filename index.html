@@ -15,37 +15,36 @@
     />
   </head>
   <body>
-    <!-- Build the header for the logo and navbar-->
-    <header class="flexbox">
-      <h1>Cody Scoles</h1>
-      <nav>
-        <ul class="flexbox">
-          <li><a href="#about-me">About Me </a></li>
-          <li><a href="#work"> Work </a></li>
-          <li><a href="#contact"> Contact </a></li>
-          <li><a href="#"> Resume </a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!--Add hero image and subheading-->
-    <div id="hero">
-      <div id="hero-subheading">
-        <p>Full Stack Web Developer</p>
-      </div>
-    </div>
-
-    <!-- Put main and aside into a flexbox-->
+    <!-- Put main content into a flexbox wrapper-->
     <main class="flexbox">
-      <!-- Display flexbox rows containing label and content -->
+      <!-- Build the header for the logo and navbar-->
+      <header class="flexbox">
+        <h1>Cody Scoles</h1>
+        <nav>
+          <ul class="flexbox">
+            <li><a href="#aboutme">About Me </a></li>
+            <li><a href="#work"> Work </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <li><a href="./assets/files/Final_SMR_Resume_cody_edited.rtf.pdf"> Resume </a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <!-- A biographical description -->
+      <!--Add hero image and subheading-->
+      <div id="hero">
+        <div id="hero-subheading">
+          <p>Full Stack Web Developer</p>
+        </div>
+      </div>
+
+      <!-- Display flexbox rows containing label and content -->
       <div class="flexbox row">
         <aside id="about-me-label" class="section-label">
           <h2>About Me</h2>
         </aside>
 
         <section id="about-me" class="main-content">
+          <!-- A biographical description -->
           <p id="about-me">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -59,40 +58,36 @@
       </div>
 
       <div class="flexbox row">
-        <!--Flexbox project listings-->
+     
 
         <aside id="work-label" class="section-label">
           <h2>Work</h2>
         </aside>
 
         <section id="work" class="main-content">
-
-         
-            <a href="#" class="project"> 
-              
-              <h2 class = "project-label">Main Project
-                <br/>
-                <span>Project Skills</span>
-              </h2>      
-            </a>
-          
-            <a href="#" class="project">
-              
-              <h2 class = "project-label">Project
-                <br/>
-                <span>Project Skills</span>
-              </h2>
-            
+             <!--Flexbox project listings-->
+          <a href="#" class="project">
+            <h2 class="project-label">
+              Main Project
+              <br />
+              <span>Project Skills</span>
+            </h2>
           </a>
 
-            <a href ='#' class="project">
-              
-              <h2 class = "project-label">Project
-                <br/>
-                <span>Project Skills</span>
-              </h2>
-              
-          
+          <a href="#" class="project">
+            <h2 class="project-label">
+              Project
+              <br />
+              <span>Project Skills</span>
+            </h2>
+          </a>
+
+          <a href="#" class="project">
+            <h2 class="project-label">
+              Project
+              <br />
+              <span>Project Skills</span>
+            </h2>
           </a>
         </section>
       </div>
@@ -104,10 +99,14 @@
 
         <!--Contact information-->
         <section id="contact" class="main-content">
-          <div class = "contact-item">770-630-2578</div> 
-          <div class = "contact-item">cody.scoles@gmail.com</div> 
-          <div class = "contact-item"><a href="https://github.com/YellowYam">GitHub</a></div>
-          <div class = "contact-item"><a href="https://www.linkedin.com/in/cody-s-82a198128">LinkedIn</a></div>
+          <div class="contact-item">770-630-2578</div>
+          <a href="mailto:cody.scoles@gmail.com" class="contact-item">Email</a>
+          <a href="https://github.com/YellowYam" class="contact-item">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/cody-s-82a198128"
+            class="contact-item"
+            >LinkedIn</a
+          >
         </section>
       </div>
     </main>
