@@ -99,6 +99,7 @@ img{
   text-align: center;
 }
 
+/*Page wrapper*/
 main.flexbox {
   display: flex;
   flex-direction: row;
