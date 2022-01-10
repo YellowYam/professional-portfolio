@@ -41,10 +41,11 @@ header nav ul {
 header nav ul li {
   width: 100px;
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid var(--white);
   margin: 10px;
 }
 
+/*Animation for the nav buttons*/
 header nav ul li:hover {
   border-radius: 8px;
   padding: 3px;
@@ -58,6 +59,7 @@ a {
   text-decoration: none;
 }
 
+/*Special lobster font for my headline*/
 h1 {
   color: var(--white);
   font-family: "Lobster", cursive;
@@ -66,7 +68,6 @@ h1 {
 }
 
 #hero {
-  position: relative;
   height: 150px;
   width: 100%;
   margin-bottom: 25px;
@@ -81,12 +82,11 @@ h1 {
 
 }
 
+/*Style and position for the gravitar*/
 img{
   margin: 5px;
   margin-left: 15px;
-  border: 1px solid white;
- 
-  
+  border: 1px solid white; 
 }
 
 #hero-subheading {
@@ -164,7 +164,7 @@ a.project {
   border: 3px solid var(--morningglory);
   margin: 20px;
 
-  /*project image*/
+  /*project image*/ /*ToDo: Replace dummy images with real project images*/
   background-image: linear-gradient(var(--white) 0%, var(--morningglory) 100%);
   background-size: 100% 100%;
   background-position: center;
@@ -175,11 +175,13 @@ a.project {
   align-items: flex-end;
 }
 
+/*Animation for project boxes*/
 a.project:hover {
   transition: all 0.5s ease-in-out;
 
   box-shadow: inset 0px 0px 8px var(--sun), 0 0 15px var(--sun);
 }
+
 h2.project-label {
   text-align: left;
   width: fit-content;
