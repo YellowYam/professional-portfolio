@@ -140,7 +140,7 @@ section.main-content {
 
 /*Style for About Me paragraph */
 
-p#about-me {
+p.about-me {
   margin: 20px;
   background-color: var(--morningglory);
   color: var(--white);
@@ -236,7 +236,7 @@ a.contact-item:hover {
 }
 
 @media screen and (max-width: 525px) {
-  p#about-me {
+  p.about-me {
     width: 250px;
   }
 }
@@ -252,7 +252,7 @@ a.contact-item:hover {
       padding-left: 10px;
     }
 
-    p#about-me {
+    p.about-me {
       width: 190px;
     }
 
