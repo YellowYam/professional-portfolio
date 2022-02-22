@@ -55,6 +55,7 @@ header nav ul {
 }
 
 header nav ul li {
+  border-radius: 8px;
   width: 100px;
   text-align: center;
   border: 2px solid var(--white);
@@ -67,7 +68,7 @@ header nav ul li.darkmode {
 
 /*Animation for the nav buttons*/
 header nav ul li:hover {
-  border-radius: 8px;
+  
   padding: 3px;
   transition: all 0.5s ease-in-out;
 
