@@ -1,7 +1,15 @@
 :root {
+
+/* Light Mode Color Scheme */
   --morningglory: #4287f5;
   --white: #fff;
   --sun: rgb(248, 245, 85);
+
+  /*Dark Mode Color Scheme */
+  --survival: #c51616;
+  --darkness: #060641;
+  --truth: #f7f7f7d3;
+
 }
 
 * {
@@ -14,6 +22,10 @@ body {
   background-color: var(--white);
 }
 
+body .darkmode {
+  background-color: var(--darkness);
+}
+
 header {
   padding: 20px;
   height: 50px;
@@ -24,6 +36,9 @@ header {
   flex: auto;
 }
 
+header .darkmode {
+  background-color: var(--survival);
+}
 header nav {
   font-size: 20px;
 }
@@ -45,6 +60,10 @@ header nav ul li {
   margin: 10px;
 }
 
+header nav ul li .darkmode {
+  border: 2px solid var(--survival) ;
+}
+
 /*Animation for the nav buttons*/
 header nav ul li:hover {
   border-radius: 8px;
@@ -52,11 +71,20 @@ header nav ul li:hover {
   transition: all 0.5s ease-in-out;
 
   box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--sun);
+
+}
+
+header nav ul li:hover .darkmode{
+  box-shadow: inset 0px 0px 8px var(--survival), 0 0 15px var(--truth);
 }
 
 a {
   color: var(--white);
   text-decoration: none;
+}
+
+a .darkmode{
+  color: var(--survival);
 }
 
 /*Special lobster font for my headline*/
@@ -65,6 +93,10 @@ h1 {
   font-family: "Lobster", cursive;
   font-size: 30px;
   margin-right: 25px;
+}
+
+h1 .darkmode {
+  color: var(--survival);
 }
 
 #hero {
@@ -99,6 +131,10 @@ img{
   text-align: center;
 }
 
+#hero-subheading .darkmode{
+  background-color: var(--survival);
+}
+
 /*Page wrapper*/
 main.flexbox {
   display: flex;
@@ -123,6 +159,10 @@ aside.section-label {
   border-right: 3px solid var(--morningglory);
 }
 
+aside.section-label .darkmode{
+  border-right: 3px solid var(--survival);
+}
+
 h2 {
   height: fit-content;
   font-size: 20px;
@@ -132,6 +172,10 @@ h2 {
   color: var(--white);
   margin: 10px;
   flex: 0 1 50%;
+}
+
+h2 .darkmode{
+  background-color: var(--survival);
 }
 
 /* Style for content sections*/
@@ -146,6 +190,10 @@ p.about-me {
   background-color: var(--morningglory);
   color: var(--white);
   padding: 10px;
+}
+
+p.about-me .darkmode{
+  background-color: var(--survival);
 }
 
 /*Style for work box */
@@ -175,11 +223,19 @@ a.project {
   align-items: flex-end;
 }
 
+a.project .darkmode{
+  border: 3px solid var(--survival);
+}
+
 /*Animation for project boxes*/
 a.project:hover {
   transition: all 0.5s ease-in-out;
 
   box-shadow: inset 0px 0px 8px var(--sun), 0 0 15px var(--sun);
+}
+
+a.project:hover .darkmode{
+  box-shadow: inset 0px 0px 8px var(--survival), 0 0 15px var(--truth);
 }
 
 h2.project-label {
@@ -219,11 +275,21 @@ a.contact-item {
   color: var(--white);
 }
 
+div.contact-item,
+a.contact-item .darkmode{
+  background-color: var(--survival);
+}
+
 div.contact-item:hover,
 a.contact-item:hover {
   transition: all 0.5s ease-in-out;
 
   box-shadow: inset 0px 0px 8px var(--sun), 0 0 15px var(--sun);
+}
+
+div.contact-item:hover,
+a.contact-item:hover .darkmode{
+  box-shadow: inset 0px 0px 8px var(--survival), 0 0 15px var(--truth);
 }
 
 /*Media Queries to patch up the Header, About Me paragraph, and Contact items*/
