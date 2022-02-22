@@ -178,6 +178,7 @@ div.flexbox.row {
 aside.section-label {
   flex: 0 0 15%;
   border-right: 3px solid var(--morningglory);
+  margin-left: 10px;
 }
 
 aside.section-label.darkmode{
@@ -329,6 +330,19 @@ a.contact-item:hover.darkmode{
   p.about-me {
     width: 250px;
   }
+
+  aside.section-label {
+    min-width: 30%;
+  }
+
+  h2{
+    font-size: medium;
+  }
+  
+  span{
+    font-size: smaller;
+  }
+  
 }
 
   @media screen and (max-width: 480px) {
@@ -349,6 +363,14 @@ a.contact-item:hover.darkmode{
     div#hero-subheading {
       width: 150px;
       padding: 5px;
+    }
+
+    h2{
+      font-size: small;
+    }
+
+    span{
+      font-size: smaller;
     }
   }
 
