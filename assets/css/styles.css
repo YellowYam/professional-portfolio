@@ -199,7 +199,7 @@ a.project:first-child {
   margin: 20px;
 
   /* project image */
-  background-image: linear-gradient(var(--white) 0%, var(--morningglory) 100%);
+  background-image: url(../images/sunshine-project-thumbnail.jpg);
   background-size: 100% 100%;
   background-position: center;
 }
