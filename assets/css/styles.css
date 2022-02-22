@@ -131,7 +131,7 @@ label{
   /*Create a flexbox for the subheading*/
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 
 }
 
@@ -140,6 +140,8 @@ img{
   margin: 5px;
   margin-left: 15px;
   border: 1px solid white; 
+  height: 100px;
+  width: 100px;
 }
 
 #hero-subheading {
