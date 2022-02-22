@@ -20,10 +20,11 @@
 
 body {
   background-color: var(--white);
+  height: 100vh;
 }
 
-body .darkmode {
-  background-color: var(--darkness);
+body.darkmode {
+  background-color: var(--darkness) !important;
 }
 
 header {
@@ -36,7 +37,7 @@ header {
   flex: auto;
 }
 
-header .darkmode {
+header.darkmode {
   background-color: var(--survival);
 }
 header nav {
@@ -60,8 +61,8 @@ header nav ul li {
   margin: 10px;
 }
 
-header nav ul li .darkmode {
-  border: 2px solid var(--survival) ;
+header nav ul li.darkmode {
+  border: 2px solid var(--darkness) ;
 }
 
 /*Animation for the nav buttons*/
@@ -74,7 +75,7 @@ header nav ul li:hover {
 
 }
 
-header nav ul li:hover .darkmode{
+header nav ul li:hover.darkmode{
   box-shadow: inset 0px 0px 8px var(--survival), 0 0 15px var(--truth);
 }
 
@@ -83,8 +84,8 @@ a {
   text-decoration: none;
 }
 
-a .darkmode{
-  color: var(--survival);
+a.darkmode{
+  color: var(--darkness);
 }
 
 /*Special lobster font for my headline*/
@@ -95,8 +96,8 @@ h1 {
   margin-right: 25px;
 }
 
-h1 .darkmode {
-  color: var(--survival);
+h1.darkmode {
+  color: var(--darkness);
 }
 
 #hero {
@@ -131,7 +132,7 @@ img{
   text-align: center;
 }
 
-#hero-subheading .darkmode{
+#hero-subheading.darkmode{
   background-color: var(--survival);
 }
 
@@ -159,7 +160,7 @@ aside.section-label {
   border-right: 3px solid var(--morningglory);
 }
 
-aside.section-label .darkmode{
+aside.section-label.darkmode{
   border-right: 3px solid var(--survival);
 }
 
@@ -174,7 +175,7 @@ h2 {
   flex: 0 1 50%;
 }
 
-h2 .darkmode{
+h2.darkmode{
   background-color: var(--survival);
 }
 
@@ -192,7 +193,7 @@ p.about-me {
   padding: 10px;
 }
 
-p.about-me .darkmode{
+p.about-me.darkmode{
   background-color: var(--survival);
 }
 
@@ -223,7 +224,7 @@ a.project {
   align-items: flex-end;
 }
 
-a.project .darkmode{
+a.project.darkmode{
   border: 3px solid var(--survival);
 }
 
@@ -234,8 +235,8 @@ a.project:hover {
   box-shadow: inset 0px 0px 8px var(--sun), 0 0 15px var(--sun);
 }
 
-a.project:hover .darkmode{
-  box-shadow: inset 0px 0px 8px var(--survival), 0 0 15px var(--truth);
+a.project:hover.darkmode{
+  box-shadow: inset 0px 0px 8px var(--truth), 0 0 15px var(--truth);
 }
 
 h2.project-label {
@@ -275,8 +276,8 @@ a.contact-item {
   color: var(--white);
 }
 
-div.contact-item,
-a.contact-item .darkmode{
+div.contact-item.darkmode,
+a.contact-item.darkmode{
   background-color: var(--survival);
 }
 
@@ -287,9 +288,9 @@ a.contact-item:hover {
   box-shadow: inset 0px 0px 8px var(--sun), 0 0 15px var(--sun);
 }
 
-div.contact-item:hover,
-a.contact-item:hover .darkmode{
-  box-shadow: inset 0px 0px 8px var(--survival), 0 0 15px var(--truth);
+div.contact-item:hover.darkmode,
+a.contact-item:hover.darkmode{
+  box-shadow: inset 0px 0px 8px var(--truth), 0 0 15px var(--truth);
 }
 
 /*Media Queries to patch up the Header, About Me paragraph, and Contact items*/
