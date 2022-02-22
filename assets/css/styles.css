@@ -100,6 +100,25 @@ h1.darkmode {
   color: var(--darkness);
 }
 
+label{
+  color: var(--white);
+}
+
+.darkmode label{
+  color: var(--darkness);
+}
+
+#modeToggle{
+  background-color: var(--white);
+  color: var(--morningglory);
+  padding: 5px;
+}
+
+.darkmode #modeToggle{
+  background-color: var(--darkness);
+  color: var(--survival);
+}
+
 #hero {
   height: 150px;
   width: 100%;

@@ -1,8 +1,3 @@
-// On document load, get the mode from local storage
-(function() { try {
-    var mode = localStorage.getItem('lightDarkMode');
-    if (!mode) return;
-  } catch (e) {} })();
 
 
 //A boolean value that determines the state of the mode
@@ -22,27 +17,34 @@ var aboutMeSection = $('p.about-me');
 var projectLinks = $('a.project');
 var contactItems = $('div.contact-item, a.contact-item');
 
-var modeElements = [body, navItems, anchorTags, heading, heroSubheading, asideSectionLabels,
-                    subheadings, aboutMeSection, projectLinks, contactItems, header];
+var modeToggleButton = $('#modeToggle');
+var modeLabel = $('label');
+
+var modeElements = [body, navItems, anchorTags, heading, heroSubheading, asideSectionLabels, modeLabel,
+                    subheadings, aboutMeSection, projectLinks, contactItems, header, modeToggleButton];
 
 
 
 
 //Changes mode
-function toggleMode(){
-    debugger;
+function toggleMode(event){
+    event.preventDefault();
+    
+
     switch (mode){
         case 'lightmode':
             modeElements.forEach(jQueryReference => {
                 jQueryReference.addClass('darkmode');
             });
             mode = 'darkmode';
+            modeToggleButton.text('Darkmode');  
             break;
         case 'darkmode':
             modeElements.forEach(jQueryReference => {
                 jQueryReference.removeClass('darkmode');
             });
             mode = 'lightmode'
+            modeToggleButton.text('Lightmode');  
             break;
         default: 
             mode = 'lightmode';
@@ -57,3 +59,16 @@ function toggleMode(){
 function getMode(){
     console.log("Portfolio is in " + mode + ".");
 };
+
+modeToggleButton.on('click', toggleMode);
+
+// On document load, setup the mode button.
+// Get the mode from local storage.
+(function() { try {
+    if (mode === 'lightmode'){
+        modeToggleButton.text('Lightmode');        
+    }
+    if (mode === 'darkmode'){
+        modeToggleButton.text('Darkmode');
+    }
+  } catch (e) {} })();
