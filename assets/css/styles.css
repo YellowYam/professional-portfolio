@@ -371,6 +371,10 @@ a.contact-item:hover.darkmode{
       font-size: small;
     }
 
+    h2.project-label {
+      font-size: medium;
+    }
+
     span{
       font-size: smaller;
     }
