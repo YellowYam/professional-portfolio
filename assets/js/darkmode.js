@@ -1,7 +1,13 @@
+// Load the saved mode on page load
+$(document).ready(function () {
+    //A boolean value that determines the state of the mode
+    mode = localStorage.getItem('codysprofilemode');
+    if(!mode){
+        mode = 'lightmode';
+    }
+    initializeMode();
+});
 
-
-//A boolean value that determines the state of the mode
-var mode = 'lightmode';
 
 //References for document elements affected by the color
 //scheme change.
@@ -21,54 +27,84 @@ var modeToggleButton = $('#modeToggle');
 var modeLabel = $('label');
 
 var modeElements = [body, navItems, anchorTags, heading, heroSubheading, asideSectionLabels, modeLabel,
-                    subheadings, aboutMeSection, projectLinks, contactItems, header, modeToggleButton];
+    subheadings, aboutMeSection, projectLinks, contactItems, header, modeToggleButton];
+
+
+    //Gets current mode
+function getMode() {
+    console.log("Portfolio is in " + mode + ".");
+};
+
+//Saves mode to local storage
+function saveMode() {
+    localStorage.setItem('codysprofilemode', mode);
+};
+
+//Loads initial mode
+function initializeMode() {
+
+    console.log('Initializing ' + mode);
+
+    switch (mode) {
+        case 'lightmode':
+            modeElements.forEach(jQueryReference => {
+                jQueryReference.removeClass('darkmode');
+            });
+            saveMode();
+            modeToggleButton.text('Lightmode');
+            break;
+        case 'darkmode':
+            modeElements.forEach(jQueryReference => {
+                jQueryReference.addClass('darkmode');
+            });
+            saveMode();
+            modeToggleButton.text('Darkmode');
+            break;
+        default:
+            mode = 'lightmode';
+            break;
+    }
+
+};
 
 
 
-
-//Changes mode
-function toggleMode(event){
+modeToggleButton.click(function (event) {
     event.preventDefault();
-    
 
-    switch (mode){
+    switch (mode) {
         case 'lightmode':
             modeElements.forEach(jQueryReference => {
                 jQueryReference.addClass('darkmode');
             });
             mode = 'darkmode';
-            modeToggleButton.text('Darkmode');  
+            saveMode();
+            modeToggleButton.text('Darkmode');
             break;
         case 'darkmode':
             modeElements.forEach(jQueryReference => {
                 jQueryReference.removeClass('darkmode');
             });
-            mode = 'lightmode'
-            modeToggleButton.text('Lightmode');  
+            mode = 'lightmode';
+            saveMode();
+            modeToggleButton.text('Lightmode');
             break;
-        default: 
+        default:
             mode = 'lightmode';
             break;
     }
+});
 
 
-};
 
 
-//Gets current mode
-function getMode(){
-    console.log("Portfolio is in " + mode + ".");
-};
 
-modeToggleButton.on('click', toggleMode);
 
-// On document load, setup the mode button.
-// Get the mode from local storage.
-(function() { try {
-    if (mode === 'lightmode'){
-        modeToggleButton.text('Lightmode');        
-    }
-    if (mode === 'darkmode'){
-        modeToggleButton.text('Darkmode');
-    }
-  } catch (e) {} })();
+
+
+
+
+
+
+
+
