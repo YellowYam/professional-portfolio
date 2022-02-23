@@ -284,6 +284,20 @@ a.project:first-child {
   background-position: center;
 }
 
+a.project:nth-child(2){
+    /* project image */
+    background-image: url(../images/weatherboard-dashboard-project-thumbnail.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+a.project:nth-child(3){
+  /* project image */
+  background-image: url(../images/code-quiz-project-thumbnail.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
 section#contact.main-content {
   display: flex;
   flex-flow: row wrap;
