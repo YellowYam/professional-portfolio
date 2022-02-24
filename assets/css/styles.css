@@ -98,6 +98,13 @@ a.darkmode{
   color: var(--darkness);
 }
 
+.anchor {
+  display: block;
+  height: 50px;
+  margin-top: -100px;
+  visibility: hidden;
+  }
+
 /*Special lobster font for my headline*/
 h1 {
   color: var(--white);
@@ -356,6 +363,10 @@ a.contact-item:hover.darkmode{
     height: 150px;
   }
 
+  .anchor {
+    height: 150px;
+    }
+
   div#hero{
     margin-top: 150px;
   }
@@ -389,6 +400,10 @@ a.contact-item:hover.darkmode{
     header {
       height: 200px;
     }
+
+    .anchor {
+      height: 200px;
+      }
 
     div#hero{
       margin-top: 200px;
