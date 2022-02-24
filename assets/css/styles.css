@@ -31,6 +31,9 @@ header {
   padding: 20px;
   height: 50px;
   background-color: var(--morningglory);
+  position: fixed;
+  width: 100vw;
+  border-bottom: 3px double var(--sun);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +42,13 @@ header {
 
 header.darkmode {
   background-color: var(--survival);
+  border-bottom: 3px double var(--truth);
 }
+
+div#hero{
+  margin-top: 50px;
+}
+
 header nav {
   font-size: 20px;
 }
@@ -347,6 +356,10 @@ a.contact-item:hover.darkmode{
     height: 150px;
   }
 
+  div#hero{
+    margin-top: 150px;
+  }
+
   div.contact-item,
   a.contact-item {
     flex: 1 1 50%;
@@ -375,6 +388,10 @@ a.contact-item:hover.darkmode{
   @media screen and (max-width: 480px) {
     header {
       height: 200px;
+    }
+
+    div#hero{
+      margin-top: 200px;
     }
 
     div.contact-item,
