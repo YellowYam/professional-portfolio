@@ -105,6 +105,11 @@ a.darkmode{
   visibility: hidden;
   }
 
+header nav ul li a {
+  display: inline-block;
+  width: 100%;
+}
+
 /*Special lobster font for my headline*/
 h1 {
   color: var(--white);
