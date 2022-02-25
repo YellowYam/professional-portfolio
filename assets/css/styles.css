@@ -21,6 +21,7 @@
 body {
   background-color: var(--white);
   height: 100vh;
+  font-size: large;
 }
 
 body.darkmode {
@@ -364,6 +365,11 @@ a.contact-item:hover.darkmode{
 
 /*Media Queries to patch up the Header, About Me paragraph, and Contact items*/
 @media screen and (max-width: 950px) {
+
+  body{
+    font-size: medium;
+  }
+  
   header {
     height: 150px;
   }
@@ -383,6 +389,11 @@ a.contact-item:hover.darkmode{
 }
 
 @media screen and (max-width: 525px) {
+
+  body{
+    font-size: medium;
+  }
+
   p.about-me {
     width: 250px;
   }
@@ -402,6 +413,10 @@ a.contact-item:hover.darkmode{
 }
 
   @media screen and (max-width: 480px) {
+    body{
+      font-size: small;
+    }
+
     header {
       height: 200px;
     }
