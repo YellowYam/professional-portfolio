@@ -457,7 +457,7 @@ a.contact-item:hover.darkmode{
     }
   }
 
-  /* Landscape media queries */
+  /* Landscape media queries from .isresponsive.com*/
 
   @media screen and (min-width: 320px) and (max-width: 480px), (min-device-width: 320px) and
 (max-device-width: 480px) and (orientation : landscape) {
@@ -465,4 +465,10 @@ a.contact-item:hover.darkmode{
       height: 100px;
     }
 }
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+    header{
+      height: 200px;
+    }
+  }
 
