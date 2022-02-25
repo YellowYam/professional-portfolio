@@ -14,6 +14,10 @@
         font-size: 15px;
     }
 
+    header nav ul li {
+      width: 80px;
+    }
+
     div.flexbox.row {
       flex-direction: column;
       align-items: center;
@@ -27,11 +31,11 @@
 
 @media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
     header{
-      height: 200px;
+      height: 150px;
     }
 
     .anchor {
-      height: 200px;
+      height: 150px;
       }
 
       header nav {
@@ -52,11 +56,11 @@
 
   @media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
     header{
-      height: 200px;
+      height: 150px;
     }
 
     .anchor {
-      height: 200px;
+      height: 150px;
       }
 
       header nav {
