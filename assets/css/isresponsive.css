@@ -10,6 +10,10 @@
       height: 100px;
       }
 
+   div#hero {
+     margin-top: 100px;
+   }
+
       header nav {
         font-size: 15px;
     }
@@ -24,9 +28,12 @@
         }
 
         aside.section-label {
-          border-right: none;
           border-bottom: 3px solid var(--morningglory);;
       }
+
+      aside.section-label.darkmode {
+        border-bottom: 3px solid var(--survival);
+    }
 }
 
 @media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
@@ -36,6 +43,10 @@
 
     .anchor {
       height: 150px;
+      }
+
+      div#hero {
+        margin-top: 150px;
       }
 
       header nav {
@@ -49,9 +60,14 @@
         }
 
         aside.section-label {
-          border-right: none;
-          border-bottom: 3px solid var(--morningglory);;
+          border-bottom: 3px solid var(--morningglory);
       }
+
+      aside.section-label.darkmode {
+        border-bottom: 3px solid var(--survival);
+    }
+
+      
   }
 
   @media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
@@ -61,6 +77,10 @@
 
     .anchor {
       height: 150px;
+      }
+
+      div#hero {
+        margin-top: 150px;
       }
 
       header nav {
@@ -75,7 +95,10 @@ div.flexbox.row {
     }
 
     aside.section-label {
-      border-right: none;
-      border-bottom: 3px solid var(--morningglory);;
+      border-bottom: 3px solid var(--morningglory);
   }
+
+  aside.section-label.darkmode {
+    border-bottom: 3px solid var(--survival);
 }
+  }
