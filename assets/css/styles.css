@@ -464,11 +464,19 @@ a.contact-item:hover.darkmode{
     header{
       height: 100px;
     }
+
+    .anchor {
+      height: 100px;
+      }
 }
 
 @media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
     header{
       height: 200px;
     }
+
+    .anchor {
+      height: 200px;
+      }
   }
 
