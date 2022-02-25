@@ -102,3 +102,39 @@ div.flexbox.row {
     border-bottom: 3px solid var(--survival);
 }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 568px), (min-device-width: 320px) and
+(max-device-width: 568px) and (orientation : landscape) {
+  header{
+    height: 150px;
+  }
+
+  .anchor {
+    height: 150px;
+    }
+
+ div#hero {
+   margin-top: 150px;
+ }
+
+    header nav {
+      font-size: 15px;
+  }
+
+  header nav ul li {
+    width: 80px;
+  }
+
+  div.flexbox.row {
+    flex-direction: column;
+    align-items: center;
+      }
+
+      aside.section-label {
+        border-bottom: 3px solid var(--morningglory);;
+    }
+
+    aside.section-label.darkmode {
+      border-bottom: 3px solid var(--survival);
+  }
+}
