@@ -72,15 +72,15 @@
 
   @media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
     header{
-      height: 150px;
+      height: 120px;
     }
 
     .anchor {
-      height: 150px;
+      height: 120px;
       }
 
       div#hero {
-        margin-top: 150px;
+        margin-top: 120px;
       }
 
       header nav {
