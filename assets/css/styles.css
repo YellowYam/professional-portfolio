@@ -480,3 +480,13 @@ a.contact-item:hover.darkmode{
       }
   }
 
+  @media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
+    header{
+      height: 200px;
+    }
+
+    .anchor {
+      height: 200px;
+      }
+    }
+
