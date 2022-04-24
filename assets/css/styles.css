@@ -12,6 +12,13 @@
 
 }
 
+/* Animation for header */
+@keyframes headerAnimation {
+  0%   {justify-content: flex-start;}
+  50%  {justify-content: flex-end;}
+  100%  {justify-content: center;}
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -39,6 +46,9 @@ header {
   justify-content: space-between;
   align-items: center;
   flex: auto;
+  animation-name: headerAnimation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
 }
 
 header.darkmode {
@@ -326,7 +336,7 @@ a.project:nth-child(2){
 
 a.project:nth-child(3){
   /* project image */
-  background-image: url(../images/code-quiz-project-thumbnail.png);
+  background-image: url(../images/sauce-maker-pro-thumbnail.png);
   background-size: 100% 100%;
   background-position: center;
 }
